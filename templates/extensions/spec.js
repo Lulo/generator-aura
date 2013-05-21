@@ -21,6 +21,8 @@ define([
   });
 
   describe('<%= _.slugify(name) %>', function() {
-    describe('#initialize');
+    describe('#initialize', function() {
+      it('should have some tests');
+    });
   });
 });
