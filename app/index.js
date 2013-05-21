@@ -53,7 +53,7 @@ AppGenerator.prototype.travis = function travis() {
 };
 
 AppGenerator.prototype.bower = function bower() {
-  this.template('common/component.json', 'component.json');
+  this.template('common/bower.json', 'bower.json');
   this.copy('common/bowerrc', '.bowerrc');
 };
 

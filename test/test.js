@@ -60,7 +60,7 @@ describe('Aura generator', function() {
   it ('should generate bower files', function (done) {
     helpers.mockPrompt(auraGeneraor, {'styles': 'D'});
     auraGeneraor.run({}, function() {
-      helpers.assertFiles(['component.json', '.bowerrc']);
+      helpers.assertFiles(['bower.json', '.bowerrc']);
       done();
     });
   });
