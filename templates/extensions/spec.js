@@ -1,4 +1,3 @@
-
 define([
   'aura/aura',
   'extensions/<%= _.slugify(name) %>/main'

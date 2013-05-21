@@ -16,5 +16,4 @@ util.inherits(ExtensionGenerator, yeoman.generators.Base);
 ExtensionGenerator.prototype.creatExtensionFiles = function creatExtensionFiles() {
   this.template('extensions/main.js', 'app/extensions/' + this.name + '/main.js');
   this.template('extensions/spec.js', 'app/extensions/' + this.name + '/spec/main.spec.js');
-
 };

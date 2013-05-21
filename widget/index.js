@@ -15,5 +15,5 @@ util.inherits(WidgetGenerator, yeoman.generators.Base);
 
 WidgetGenerator.prototype.creatWidgetFiles = function creatWidgetFiles() {
   this.template('widgets/main.js', 'app/widgets/' + this.name + '/main.js');
-  // TODO: generate test
+  this.template('widgets/spec.js', 'app/widgets/' + this.name + '/spec/main.spec.js');
 };

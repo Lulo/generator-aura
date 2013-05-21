@@ -1,11 +1,11 @@
 define(['underscore'], function (_) {
+  'use strict';
 
   return {
-
     initialize: function () {
       _.bindAll(this);
 
-      this.$el.click(this.someCoolFeature)
+      this.$el.click(this.someCoolFeature);
       this.render();
     },
 
