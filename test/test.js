@@ -126,7 +126,8 @@ describe('Aura generator', function() {
     var deps = ['../../extension'];
     var widgetGenerator = helpers.createGenerator('aura:extension', deps, ['coolExtension']);
     widgetGenerator.run([], function() {
-      helpers.assertFiles(['app/extensions/coolExtension.js']);
+      helpers.assertFiles(['app/extensions/coolExtension/main.js']);
+      helpers.assertFiles(['app/extensions/coolExtension/spec/main.spec.js']);
       done();
     });
   });
