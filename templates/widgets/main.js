@@ -1,26 +1,34 @@
-define(['underscore'], function (_) {
+define([
+  'underscore',
+  'text!./template.html'
+], function (_, tpl) {
   'use strict';
 
+  /**
+   * Compile template
+   */
+  var template = _.template(tpl);
+
+  /**
+   * Initialize widget
+   */
+  function initialize() {
+    _.bindAll(this);
+    this.render();
+  }
+
+  /**
+   * Render template
+   */
+  function render() {
+    this.html(template());
+  }
+
+  /**
+   * Expose public api
+   */
   return {
-    initialize: function () {
-      _.bindAll(this);
-
-      this.$el.click(this.someCoolFeature);
-      this.render();
-    },
-
-    render: function () {
-      //Place render logic here
-      this.$el.html('Click me: ' + this.$el.html());
-    },
-
-    someCoolFeature: function(){
-      //Awesome code
-      var element = this.$el;
-      element.fadeOut(200, function(){
-        element.fadeIn(200);
-      });
-    }
+    initialize: initialize,
+    render: render
   };
-
 });

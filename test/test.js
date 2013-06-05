@@ -118,6 +118,8 @@ describe('Aura generator', function() {
     var widgetGenerator = helpers.createGenerator('aura:widget', deps, ['coolWidget']);
     widgetGenerator.run([], function() {
       helpers.assertFiles(['app/widgets/coolWidget/main.js']);
+      helpers.assertFiles(['app/widgets/coolWidget/template.html']);
+      helpers.assertFiles(['app/widgets/coolWidget/style.less']);
       helpers.assertFiles(['app/widgets/coolWidget/spec/main.spec.js']);
       done();
     });
