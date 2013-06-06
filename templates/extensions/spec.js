@@ -4,22 +4,19 @@ define([
 ], function (Aura, extension) {
   'use strict';
 
-  var app;
-
-
-  beforeEach(function(done) {
-    app = new Aura({debug: true});
-
-    app.use(extension);
-
-    // reference your extension below
-    app.start().done(function() {
-      // do stuff here
-      setTimeout(done, 0);
-    });
-  });
-
   describe('<%= _.slugify(name) %>', function() {
+
+    var app;
+
+    beforeEach(function(done) {
+      app = new Aura({debug: true});
+      app.use(extension);
+
+      app.start().done(function() {
+        done();
+      });
+    });
+
     describe('#initialize', function() {
       it('should have some tests');
     });
