@@ -10,7 +10,7 @@ define([
   var template = _.template(tpl);
 
   /**
-   * Initialize widget
+   * Initialize component
    */
   function initialize() {
     _.bindAll(this);

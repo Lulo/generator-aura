@@ -1,7 +1,7 @@
 define([
   'aura/aura',
-  'widgets/<%= _.slugify(name) %>/main'
-], function (Aura, widget) {
+  'component/<%= _.slugify(name) %>/main'
+], function (Aura, component) {
   'use strict';
 
   describe('<%= _.slugify(name) %>', function() {
@@ -12,7 +12,7 @@ define([
     });
 
     it('should exist', function() {
-      expect(widget).to.be.ok;
+      expect(component).to.be.ok;
     });
 
     describe('#initialize', function() {
