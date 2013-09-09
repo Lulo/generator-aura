@@ -25,7 +25,9 @@ mkdir my-awesome-project && cd $_
 
 Then install `generator-aura`:
 ```
-npm install generator-aura
+git clone git@github.com:Lulo/generator-aura.git
+cd generator-aura
+npm link
 ```
 
 Run `yo aura`, optionally passing an app name:
