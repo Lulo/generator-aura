@@ -1,8 +1,6 @@
+# Aura generator for Yeoman - customized for Onswipe directory structure [![Build Status](https://secure.travis-ci.org/dotCypress/generator-aura.png?branch=master)](http://travis-ci.org/aurajs/generator-aura)
 
-
-# Aura generator for Yeoman - customized for Onswipe directory structure [![Build Status](https://secure.travis-ci.org/dotCypress/generator-aura.png?branch=master)](http://travis-ci.org/yeoman-aura/generator-aura)
-
-<img src="http://ru.gravatar.com/userimage/3193976/53730a1d436c157bf770c04232c2a72b.png?size=200" width="200px"/>
+<img src="http://en.gravatar.com/userimage/3193976/53730a1d436c157bf770c04232c2a72b.png?size=200" width="200px"/>
 
 
 ```
@@ -27,7 +25,7 @@ mkdir my-awesome-project && cd $_
 
 Then install `generator-aura`:
 ```
-npm install -g generator-aura
+npm install generator-aura
 ```
 
 Run `yo aura`, optionally passing an app name:
@@ -44,22 +42,22 @@ npm install && bower install --dev
 
 Available generators:
 
-* [aura:widget](#widget)
+* [aura:component](#aura_component)
 * [aura:extension](#extension)
 * [aura:styles](#styles)
 
-### Widget
-Generates a widget in `app/widgets`.
+### Aura Component
+Generates a component in `app/aura_components`.
 
 Example:
 ```bash
-yo aura:widget sample
+yo aura:component sample
 ```
 
-Produces `app/widgets/sample/main.js`
+Produces `app/aura_components/sample/main.js`
 
 ### Extension
-Generates a extension in `app/extensions`.
+Generates an extension in `app/extensions`.
 
 Example:
 ```bash
@@ -89,4 +87,4 @@ See the [contributing docs](https://github.com/yeoman/yeoman/blob/master/contrib
 
 ## License
 
-[BSD license](http://opensource.org/licenses/bsd-license.php)
+[MIT license](http://opensource.org/licenses/mit-license.php)

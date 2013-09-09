@@ -1,5 +1,5 @@
 define([
-  'underscore',
+  'lodash',
   'text!./template.html'
 ], function (_, tpl) {
   'use strict';
